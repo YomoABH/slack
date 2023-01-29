@@ -168,8 +168,8 @@ body {
 .header__input::placeholder {
   color: #fff;
 }
-.header__input:active, .header__input:focus {
-  outline: 2px #fff solid;
+.header__input:active, .header__input:focus + {
+  color: #000;
 }
 .header__input-button {
   display: flex;
@@ -218,6 +218,84 @@ body {
   max-width: 100%;
 }
 
+.header__input:focus + .header__droplist {
+  opacity: 1;
+  visibility: visible;
+}
+.header__droplist {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -350px;
+}
+
+.header-droplist {
+  width: 500px;
+  height: 350px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 5px;
+  border: rgb(96, 96, 96) 1px solid;
+}
+.header-droplist__likers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+.header-droplist__likers::after {
+  content: "I'm looking for...";
+  font-size: 11px;
+  color: rgb(102, 102, 102);
+  position: absolute;
+  left: 0px;
+  top: -15px;
+}
+.header-droplist__tiker {
+  font-size: 15px;
+  padding: 5px 10px;
+  background-color: #e8f5fa;
+  border-radius: 5px;
+}
+.header-droplist__tiker:hover {
+  cursor: pointer;
+}
+.header-droplist__history-list {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  position: relative;
+}
+.header-droplist__history-list::after {
+  content: "recent searches";
+  font-size: 11px;
+  color: rgb(102, 102, 102);
+  position: absolute;
+  left: 0px;
+  top: -15px;
+}
+.header-droplist__history-item {
+  font-size: 15px;
+  position: relative;
+  padding-left: 20px;
+}
+.header-droplist__history-item:hover {
+  cursor: pointer;
+}
+.header-droplist__history-item::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: url(../img/clockB.svg) center/cover;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .aside {
   background-color: #544538;
 }
@@ -245,6 +323,9 @@ body {
   .header__input {
     width: 465px;
   }
+  .header-droplist {
+    width: 465px;
+  }
 }
 @media (max-width: 768px) {
   .header {
@@ -264,5 +345,8 @@ body {
   }
   .header__user {
     gap: 5px;
+  }
+  .header-droplist {
+    width: 242px;
   }
 }/*# sourceMappingURL=style.css.map */
