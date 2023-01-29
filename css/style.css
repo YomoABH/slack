@@ -330,6 +330,7 @@ body {
 
 .aside {
   padding: 20px 0;
+  border-top: 1px #836a54 solid;
   background-color: #544538;
 }
 .aside__list {
