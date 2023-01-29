@@ -250,7 +250,7 @@ body {
   .header {
     padding: 0 10px;
     justify-content: space-between;
-    gap: 0%;
+    gap: 15px;
   }
   .header__input {
     width: 100%;
@@ -258,5 +258,11 @@ body {
   .header__avatar {
     width: 40px;
     height: 40px;
+  }
+  .header__search-bar {
+    gap: 5px;
+  }
+  .header__user {
+    gap: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
