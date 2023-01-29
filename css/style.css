@@ -329,7 +329,25 @@ body {
 }
 
 .aside {
+  padding: 20px 0;
   background-color: #544538;
+}
+.aside__list {
+  padding: 10px 0;
+  border-top: 1px #836a54 solid;
+  border-bottom: 1px #836a54 solid;
+  display: flex;
+  flex-direction: column;
+}
+.aside__item {
+  font-size: 15px;
+  color: #fff;
+  padding: 3px 0px 3px 10px;
+  transition: all 0.3s;
+}
+.aside__item:hover {
+  background-color: #736355;
+  cursor: pointer;
 }
 
 .main {
