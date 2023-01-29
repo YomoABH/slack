@@ -341,7 +341,7 @@ body {
   flex-direction: column;
 }
 .aside__item {
-  font-size: 15px;
+  font-size: 21px;
   color: #fff;
   padding: 3px 0px 3px 10px;
   transition: all 0.3s;
