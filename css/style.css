@@ -116,7 +116,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 45px 1fr;
+  grid-template-rows: 45px calc(100vh - 45px);
 }
 
 .header {
@@ -132,6 +132,14 @@ body {
 .main {
   grid-column-start: 3;
   grid-column-end: 11;
+}
+
+::-webkit-scrollbar {
+  background-color: #736355;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #af6524;
 }
 
 .header {
@@ -332,6 +340,7 @@ body {
   padding: 20px 0;
   border-top: 1px #836a54 solid;
   background-color: #544538;
+  overflow: hidden;
 }
 .aside__list {
   padding: 10px 0;
@@ -339,6 +348,11 @@ body {
   border-bottom: 1px #836a54 solid;
   display: flex;
   flex-direction: column;
+}
+.aside__list.loop {
+  max-height: 100%;
+  overflow-y: scroll;
+  display: block;
 }
 .aside__item {
   font-size: 21px;

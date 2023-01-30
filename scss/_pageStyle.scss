@@ -1,0 +1,33 @@
+body {
+	height: 100vh;
+}
+
+.wpapper {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 45px calc(100vh - 45px);
+}
+
+.header {
+	grid-column-start: 1;
+	grid-column-end: 11;
+}
+
+.aside {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.main {
+	grid-column-start: 3;
+	grid-column-end: 11;
+}
+
+::-webkit-scrollbar {
+	background-color: #736355;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #af6524;
+}

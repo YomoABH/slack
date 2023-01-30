@@ -1,0 +1,129 @@
+.header {
+
+	// .header__droplist
+	&__input {
+		&:focus+.header__droplist {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&__droplist {
+		padding: 30px;
+		position: absolute;
+		right: 0;
+		bottom: -350px;
+	}
+}
+
+.header-droplist {
+	width: 500px;
+	height: 350px;
+	background-color: #fff;
+	opacity: 0;
+	visibility: hidden;
+
+
+	border-radius: 5px;
+	border: rgb(96, 96, 96) 1px solid;
+
+
+	// .header-droplist__likers
+
+	&__likers {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		align-items: center;
+		position: relative;
+		margin-bottom: 40px;
+
+		&::after {
+			content: "I'm looking for...";
+			font-size: 11px;
+			color: rgb(102, 102, 102);
+			position: absolute;
+			left: 0px;
+			top: -15px;
+		}
+	}
+
+	// .header-droplist__tiker
+
+	&__tiker {
+		font-size: 15px;
+		padding: 5px 10px;
+		background-color: #e8f5fa;
+		border-radius: 5px;
+		transition: all .3s;
+
+		&:hover {
+			cursor: pointer;
+			background-color: #268eb8;
+			color: #FFF;
+		}
+	}
+
+
+
+	// .header-droplist__history-list
+
+	&__history-list {
+		display: flex;
+		gap: 5px;
+		flex-direction: column;
+		position: relative;
+
+		&::after {
+			content: "recent searches";
+			font-size: 11px;
+			color: rgb(102, 102, 102);
+			position: absolute;
+			left: 0px;
+			top: -15px;
+		}
+	}
+
+	// .header-droplist__history-item
+
+	&__history-item {
+		font-size: 15px;
+		position: relative;
+		padding-left: 20px;
+		transition: all .3s;
+		display: inline;
+
+		&:hover {
+			cursor: pointer;
+
+			&::after {
+				width: 100%;
+			}
+		}
+
+		&::after {
+			content: "";
+			height: 1px;
+			width: 0%;
+			background-color: rgb(121, 121, 121);
+			position: absolute;
+			left: 0;
+			bottom: 0;
+
+			transition: all .3s;
+		}
+
+		&::before {
+			content: "";
+			width: 13px;
+			height: 13px;
+			background: url(../img/clockB.svg) center/cover;
+			position: absolute;
+			left: 0;
+			top: 50%;
+
+			transform: translateY(-50%);
+		}
+	}
+
+}

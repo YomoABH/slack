@@ -1,0 +1,38 @@
+.aside {
+	padding: 20px 0;
+	border-top: 1px #836a54 solid;
+	background-color: #544538;
+	overflow: hidden;
+
+	// .aside__list
+
+	&__list {
+		padding: 10px 0;
+		border-top: 1px #836a54 solid;
+		border-bottom: 1px #836a54 solid;
+
+		display: flex;
+		flex-direction: column;
+
+
+		&.loop {
+			max-height: 100%;
+			overflow-y: scroll;
+			display: block;
+		}
+	}
+
+	// .aside__item
+
+	&__item {
+		font-size: 21px;
+		color: #fff;
+		padding: 3px 0px 3px 10px;
+		transition: all .3s;
+
+		&:hover {
+			background-color: #736355;
+			cursor: pointer;
+		}
+	}
+}
