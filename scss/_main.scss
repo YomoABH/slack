@@ -1,3 +1,62 @@
 .main {
-	background-color: #fff;
+
+	// .main__dialog-list
+
+	&__dialog-list {
+		background-color: rgb(238, 238, 238);
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		height: calc(100% - 100px);
+		overflow-y: scroll;
+	}
+
+	// .main__message-item
+
+	&__message-item {}
+
+	&__input-aria {
+		height: 100px;
+		width: 100%;
+	}
+}
+
+.message-item {
+	padding: 10px;
+
+	// .message-item__info
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	border-top: 1px rgb(189, 189, 189) solid;
+
+	&__info {
+		display: flex;
+		gap: 10px;
+		padding: 0 20px;
+	}
+
+	&__user-avatar {
+		width: 50px;
+		height: 50px;
+		display: block;
+	}
+
+	// .message-item__user-name
+
+	&__user-name {
+		font-weight: 700;
+	}
+
+	// .message-item__push-time
+
+	&__push-time {}
+
+	// .message-item__content
+
+	&__content {
+		margin-top: -30px;
+		padding: 0 82px;
+	}
 }

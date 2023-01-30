@@ -25,6 +25,17 @@
 	.header-droplist {
 		width: 465px;
 	}
+
+
+	.message-item {
+		&__info {
+			padding: 0;
+		}
+
+		&__content {
+			padding: 0 62px;
+		}
+	}
 }
 
 
@@ -54,6 +65,12 @@
 
 	.header-droplist {
 		width: 242px;
+	}
+
+	.message-item {
+		&__content {
+			font-size: rem(14);
+		}
 	}
 
 }
