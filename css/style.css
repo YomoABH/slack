@@ -415,7 +415,7 @@ body {
 @media (max-width: 991px) {
   .wpapper {
     grid-template-columns: 210px 1fr;
-    grid-template-rows: 60px 1fr;
+    grid-template-rows: 45px calc(100vh - 45px);
   }
   .aside {
     grid-column-start: 1;
