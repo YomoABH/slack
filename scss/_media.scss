@@ -33,7 +33,7 @@
 		}
 
 		&__content {
-			padding: 0 62px;
+			padding: 0 0 0 62px;
 		}
 	}
 }
@@ -71,6 +71,14 @@
 		&__content {
 			font-size: rem(14);
 		}
+	}
+
+	.aside {
+		display: none;
+	}
+
+	.main {
+		grid-column-start: 1;
 	}
 
 }
