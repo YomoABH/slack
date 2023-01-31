@@ -1,0 +1,42 @@
+.modal {
+	padding: 30px;
+
+	background-color: #fff;
+	width: 20vW;
+	height: 100%;
+	border-radius: 10px;
+	border: 1px rgb(175, 175, 175) solid;
+
+	// .modal__close-icon
+
+	&__close-icon {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+
+		width: 25px;
+		height: 25px;
+	}
+
+	// .modal__list-info
+
+	&__list-info {}
+
+	// .modal__item
+
+	&__item {}
+}
+
+.header {
+
+
+	// .header__modal
+	&__user {}
+
+	&__modal {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		z-index: 10;
+	}
+}

@@ -6,6 +6,13 @@
 
 	// .aside__list
 
+	&__title {
+		color: #fff;
+		margin-bottom: 10px;
+		font-size: 21px;
+		padding-left: 10px;
+	}
+
 	&__list {
 		padding: 10px 0;
 		border-top: 1px #836a54 solid;
@@ -20,6 +27,16 @@
 			overflow-y: scroll;
 			display: block;
 
+		}
+	}
+
+	&__scroll-cnt {
+		overflow: scroll;
+		height: 100%;
+
+		details {
+			display: inline-block;
+			width: 200px;
 		}
 	}
 
