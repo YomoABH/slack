@@ -27,8 +27,13 @@
 			width: 100%;
 			height: 100px;
 			resize: none;
+
+			padding-top: 30px;
 		}
+
 	}
+
+
 }
 
 .message-item {
@@ -40,6 +45,27 @@
 	gap: 5px;
 
 	border-top: 1px rgb(189, 189, 189) solid;
+
+	&__text-icon {
+		padding: 5px;
+		display: flex;
+		gap: 7px;
+
+		position: absolute;
+		left: 1px;
+		top: 1px;
+
+		width: calc(100% - 2px);
+
+		background-color: rgb(238, 238, 238);
+
+		li {
+			&:hover {
+				font-weight: 700;
+			}
+		}
+	}
+
 
 	&__info {
 		display: flex;
