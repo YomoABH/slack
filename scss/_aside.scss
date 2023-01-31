@@ -19,6 +19,7 @@
 			max-height: 100%;
 			overflow-y: scroll;
 			display: block;
+
 		}
 	}
 
@@ -45,4 +46,10 @@
 			cursor: pointer;
 		}
 	}
+
+	summary {
+		color: #fff;
+		padding: 10px 0px 0px 10px;
+	}
+
 }
