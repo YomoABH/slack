@@ -419,6 +419,7 @@ body {
   max-height: 100%;
   overflow-y: scroll;
   display: block;
+  border-top: 0px #836a54 solid;
 }
 .aside__scroll-cnt {
   overflow: scroll;
@@ -490,7 +491,7 @@ body {
   gap: 7px;
   position: absolute;
   left: 1px;
-  top: 1px;
+  top: 2px;
   width: calc(100% - 2px);
   background-color: rgb(238, 238, 238);
 }
